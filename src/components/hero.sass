@@ -2,65 +2,6 @@
 
 $text-color: #C4E0E2
 
-#nav
-    width: 100%
-    top: 0
-    position: fixed
-    margin: 0px
-    text-align: center
-    padding-top: .25em
-    padding-bottom: .25em 
-    transition: background .35s linear
-    cursor: pointer
-    
-.scroll
-    background: #181D27
-    transition: background .35s linear
-
-#nav li
-    display: inline
-    padding: 15px 85px
-
-#nav a   
-    transition: color .1s ease-in-out
-    display: inline-block
-    position: relative
-    overflow: hidden
-    color: $text-color
-    text-decoration: none
-    font-weight: bold
-    opacity: .65
-    font-size: 2.5rem
-
-#nav a:before
-    content: ""
-    position: absolute
-    left: 0
-    right: 0
-    bottom: 0
-    background: #2098d1
-    height: 3px
-    transition-duration: 0.1s
-    transition-timing-function: ease-in-out
-    transform: translateY(3px)
-    transition-property: transform
-
-
-#nav a:hover:before
-    transform: translateY(0)
-
-#nav a:hover 
-    color: #2098d1
-    transition:  color .1s ease-in-out
-
-.test
-    position: relative
-    height: 100vh
-    width: 100%
-    background-color: white
-    padding-top: 5%
-
-
 .hero
     position: relative
     height: 100vh
@@ -88,23 +29,22 @@ $text-color: #C4E0E2
     overflow: hidden
     margin-top: 0px
 
-
-
 .hero h1 
+    letter-spacing: .15em
     position: absolute
     color: $text-color
-    font-size: 8rem
+    font-size: clamp(2.5rem,10vw,8rem)
     line-height: 0.9
     text-align: center
-    opacity: .7
+    // opacity: .85
     
 .hero p
     position: relative
     color: $text-color
-    font-size: 1.8rem
+    font-size: clamp(1rem,5vw,2.5rem)
     line-height: 0.9
     text-align: center
-    opacity: .7
+    opacity: .85
  
 
 

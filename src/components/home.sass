@@ -1,6 +1,14 @@
+$text-color: #C4E0E2
+@import url('https://fonts.googleapis.com/css?family=Open+Sans')
+
+@font-face 
+    font-family: 'SIMPLICIFA'
+    font-weight: 900
+    src: local('SIMPLIFICA'), url('/fonts/SIMPLIFICA.ttf') format('truetype')
+    
 body 
     background-color: #000000
-    font-family: Arial, sans-serif
+    font-family: SIMPLICIFA, serif
     line-height: 1.5
     margin: 0  
     // font-size: 0em
@@ -17,6 +25,84 @@ body::-webkit-scrollbar-thumb
     outline: 2px solid slategrey
 
 
+#nav
+    width: 100%
+    top: 0
+    position: fixed
+    margin: 0
+    text-align: center
+    padding-top: .25em
+    padding-bottom: .25em 
+    transition: background .35s linear
+    cursor: pointer
+    
+.scroll
+    background: #181D27
+    transition: background .35s linear
+
+#nav li
+    display: inline
+    padding: 1em 3em
+
+#nav a   
+    transition: color .1s ease-in-out
+    display: inline-block
+    position: relative
+    overflow: hidden
+    color: $text-color
+    text-decoration: none
+    padding-left: .1em
+    font-size: 3rem
+    letter-spacing: .1em
+
+
+#nav a:before
+    content: ""
+    position: absolute
+    left: 0
+    right: 0
+    bottom: 0
+    background: #2098d1
+    height: 3px
+    transition-duration: 0.1s
+    transition-timing-function: ease-in-out
+    transform: translateY(3px)
+    transition-property: transform
+
+#nav a:hover:before
+    transform: translateY(0)
+
+#nav a:hover 
+    color: #2098d1
+    transition:  color .1s ease-in-out
+
+#mobile-nav
+    background: #181D27
+    position: fixed
+    top: 0
+    align-items: center
+    height: 5em
+    width: 100%
+    font-family: 'Open Sans', sans-serif
+    cursor: pointer
+
+
+#mobile-nav li
+    display: inline
+    padding-left: 1em 
+
+#mobile-nav a
+    color: $text-color
+    text-decoration: none
+    text-align: center
+    display: inline-block
+    font-size: 1.2em
+
+
 // html, body
 //   margin: 0  
 //   padding: 0  
+
+ul, li
+    padding: 0
+    margin: 0
