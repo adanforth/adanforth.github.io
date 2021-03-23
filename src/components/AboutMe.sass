@@ -1,0 +1,109 @@
+$text-color: #C4E0E2
+$background: #181D27
+
+.about
+  background-color: white
+  font-family: Arial, sans-serif
+  color: $background
+  font-size: 1.5em
+
+  padding: 5em
+  // line-height: 1.5
+  // margin: 0
+
+
+
+.grid-container
+  display: grid
+  // grid-template-columns: auto auto auto
+  grid-gap: .3em
+
+.grid-item 
+  background-color: rgba(255, 255, 255, 0.8)
+  border: 1px solid rgba(0, 0, 0, 0.8)
+  text-align: center
+  background-color: $text-color
+
+.picture
+  // : url(#{$aboutMeImagePath}/unknown.png)
+  // background-size: 100% cover
+  grid-area: 1 / 1 / span 1 / span 1
+
+.img
+  width: 100%
+  height: 100%
+  object-fit: cover
+
+
+.about-desc
+  grid-area: 1 / 2 / span 2 / span 4
+
+.contact
+  grid-area: 2 / 1 / span 1 / span 1
+
+
+
+.css-selector 
+    background: linear-gradient(18deg, $text-color, $background)
+    background-size: 400% 400%
+
+    animation: AnimationName 15s ease infinite
+
+@-webkit-keyframes AnimationName 
+    0%
+      background-position:0% 13%
+    50%
+      background-position:100% 88%
+    100%
+      background-position:0% 13%
+
+@-moz-keyframes AnimationName 
+    0%
+      background-position:0% 13%
+    50%
+      background-position:100% 88%
+    100%
+      background-position:0% 13%
+
+@keyframes AnimationName 
+    0%
+      background-position:0% 13%
+    50%
+      background-position:100% 88%
+    100%
+      background-position:0% 13%
+
+    
+// .container
+//   display: flex
+//   flex-direction: horizontal
+
+// .column-1
+//   flex: 1
+
+// .column-3
+//   flex: 3
+
+h2
+  margin: 0
+
+.about p 
+  margin: 0
+  // float: left
+  // padding: 10px
+  // height: 300px
+
+// .left
+//   width: 25%
+
+// .right 
+//   width: 75%
+
+// .row:after 
+//   content: ""
+//   display: table
+//   clear: both
+
+  
+
+ 
