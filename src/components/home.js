@@ -3,7 +3,7 @@ import './home.sass'
 
 import AboutMe from './AboutMe'
 import Hero from './hero'
-
+// import Footer from './footer'
 
 
 
@@ -26,7 +26,8 @@ class Home extends React.Component {
 
         this.links = {
             "Home": this.home,
-            "About Me": this.AboutMe
+            "About Me": this.AboutMe,
+            "To Top": this.home
         };
     }
 
@@ -37,7 +38,7 @@ class Home extends React.Component {
                 <li><a onClick = {this.scrollTo}>Home</a></li>
                 <li><a onClick = {this.scrollTo}>About Me</a></li>
                 <li><a href="#">Projects</a></li>
-                <li><a href="/yeet">Yeet</a></li>
+                {/* <li><a href="/yeet">Yeet</a></li> */}
             </ul>
         </div>
         );
@@ -78,6 +79,14 @@ class Home extends React.Component {
                 </div>
                 <div>
                     {this.Navbar(scrollStatus, menuType)}
+                </div>
+                <div className = "footer">
+                    <div className = "copywrite">
+                        @ 2021 Andy Danforth
+                        <button onClick = {this.scrollTo} className = "footer-button">
+                            To Top
+                        </button>
+                    </div>
                 </div>
             </div>
         )
