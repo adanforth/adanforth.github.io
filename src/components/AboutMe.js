@@ -29,6 +29,7 @@ class AboutMe extends React.Component{
                 </header>
                 <main className = "about-main">
                     <div className = "container">
+                        <div className = "content">
                             <div className  = "col-aboutme">
                                 <h3 className = "m">About Me</h3>
                                 <p>
@@ -41,14 +42,24 @@ class AboutMe extends React.Component{
                                 </p>
                             </div>
                             <div className  = "col-contact">
-                                <h3 className = "m">Contact Me</h3>
+                                <h3 className = "m">Contact</h3>
                                 <p>
-                                CONTACT ME. CONTACT ME. CONTACT ME.
                                 CONTACT ME.
-                                CONTACT ME. 
-                                CONTACT ME. 
+                                </p>
+                                <p>
+                                CONTACT ME.
+                                </p>
+                                <p>
+                                CONTACT ME.
+                                </p>
+                                <p>
+                                CONTACT ME.
+                                </p>
+                                <p>
+                                CONTACT ME.
                                 </p>
                             </div>
+                        </div>
                     </div>
                 </main>
             </div>

@@ -14,12 +14,14 @@ class Home extends React.Component {
             scroll: window.scrollY,
             width: window.innerWidth,
             height: window.innerHeight,
+            menuToggle: false
         }
         
         this.onScroll = this.onScroll.bind(this);
         this.scrollTo = this.scrollTo.bind(this);
         this.Navbar = this.Navbar.bind(this);
         this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+        this.menuClick = this.menuClick.bind(this);
 
         this.home = React.createRef();
         this.AboutMe = React.createRef();
@@ -31,10 +33,10 @@ class Home extends React.Component {
         };
     }
 
-    Navbar(scrollStatus, menuType){
+    Navbar(scrollStatus){
         return(
         <div>
-            <ul id= {menuType} className = {scrollStatus}>
+            <ul id = "nav" className = {scrollStatus}>
                 <li><a onClick = {this.scrollTo}>Home</a></li>
                 <li><a onClick = {this.scrollTo}>About Me</a></li>
                 <li><a href="#">Projects</a></li>
@@ -42,6 +44,25 @@ class Home extends React.Component {
             </ul>
         </div>
         );
+    }
+
+    MobileNavbar(){
+        let menuClicked = !(this.state.menuToggle) ? "" : "change"
+
+        return(
+            <div id="mobile-nav" className = {menuClicked}>
+                <div id = "movile-nav-hamburger" onClick = {this.menuClick}>
+                    <div className="bar1"></div>
+                    <div className="bar2"></div>
+                    <div className="bar3"></div>
+                </div>
+                <ul id = "mobile-nav-list">
+                    <li><a onClick = {this.scrollTo}>Home</a></li>
+                    <li><a onClick = {this.scrollTo}>About Me</a></li>
+                    <li><a href="#">Projects</a></li>
+                </ul>
+            </div>
+        )
     }
 
     updateWindowDimensions(){
@@ -52,6 +73,10 @@ class Home extends React.Component {
         if (this.links[event.target.innerText]){
             this.links[event.target.innerText].current.scrollIntoView({behavior: 'smooth'});
         }
+    }
+
+    menuClick(){
+        this.setState({menuToggle: !this.state.menuToggle})
     }
 
     onScroll(){
@@ -67,7 +92,7 @@ class Home extends React.Component {
 
     render (){
         let scrollStatus = (this.state.scroll > 0) ? "scroll" : "";
-        let menuType = (this.state.width < 900) ? "mobile-nav" : "nav"
+        let menuType = (this.state.width > 710) ? this.Navbar(scrollStatus) : this.MobileNavbar()
 
         return (
             <div>
@@ -78,7 +103,7 @@ class Home extends React.Component {
                     <AboutMe/>
                 </div>
                 <div>
-                    {this.Navbar(scrollStatus, menuType)}
+                    {menuType}
                 </div>
                 <div className = "footer">
                     <div className = "copywrite">

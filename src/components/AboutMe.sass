@@ -11,7 +11,7 @@ $main-font: 'Noto Sans KR', sans-serif
 .about-header
   background-color: #f5f8fa
   opacity: .9
-  display: block
+  // display: block
   padding-left: 2rem
   padding-right: 2rem
   padding-top: 2rem
@@ -19,6 +19,7 @@ $main-font: 'Noto Sans KR', sans-serif
   border-color: rgba(0,0,0,.125)
   border-style: solid
   border-width: 1px
+  // align-items: center
 
 
 
@@ -39,25 +40,35 @@ $main-font: 'Noto Sans KR', sans-serif
 
 
 .container
-  display: flex
-  // float: left
-  max-width: 42em
+  display: inline-block
+  max-width: 38em
   padding: 2rem
   margin-left: auto
   margin-right: auto
   text-align: left
-  // margin-left: -1em
-  // margin-right: -1em
-  box-sizing: border-box
+  // box-sizing: border-box
 
+.content
+  float: left
+  margin-left: -1rem
+  margin-right: -1rem
 
 .col-aboutme
-  flex: 9
-  padding: 1em
+  display: block
+  float: left
+  width: 75%
+  box-sizing: border-box
+  padding-left: 1em
+  padding-right: 1em
+
 
 .col-contact
-  flex: 3
-  padding: 1em
+  display: block
+  box-sizing: border-box
+  width: 25%
+  padding-left: 1em
+  padding-right: 1em
+  float: left
 
 .m
   margin-top: 0
@@ -86,126 +97,6 @@ h2
 img
   max-width: 100%
   
-// .about
-//   background-color: white
-//   font-family: Arial, sans-serif
-//   color: $background
-//   font-size: 1.5em
-
-//   padding: 5em
-//   // line-height: 1.5
-//   // margin: 0
-
-
-
-// .grid-container
-//   display: grid
-//   // grid-template-columns: auto auto auto
-//   // grid-template-columns: repeat(4,1fr)
-//   // grid-template-rows: repeat(2,1fr) 
-//   grid-gap: .5em
-
-// .grid-item 
-//   background-color: rgba(255, 255, 255, 0.8)
-//   border: 1px solid rgba(0, 0, 0, 0.8)
-//   text-align: center
-//   background-color: $text-color
-
-// .picture
-// //   background: url('/img/unknown.png')
-// //   background-size: cover
-// //   background-position: center
-// //   height: 100%
-//   grid-area: 1 / 1 / span 1 / span 1
-
-// .img
-//   width: 50%
-//   height: auto
-//   object-fit: cover
-//   // height: 20%
-//   // width: auto
-
-//   // object-fit: cover
-
-// .about-desc
-//   grid-area: 1 / 2 / span 5 / span 4
-
-// .contact
-//   grid-area: 2 / 1 / span 1 / span 1
-
-
-
-// .css-selector 
-//     background: linear-gradient(18deg, $text-color, $background)
-//     background-size: 400% 400%
-
-//     animation: AnimationName 15s ease infinite
-
-// @-webkit-keyframes AnimationName 
-//     0%
-//       background-position:0% 13%
-//     50%
-//       background-position:100% 88%
-//     100%
-//       background-position:0% 13%
-
-// @-moz-keyframes AnimationName 
-//     0%
-//       background-position:0% 13%
-//     50%
-//       background-position:100% 88%
-//     100%
-//       background-position:0% 13%
-
-// @keyframes AnimationName 
-//     0%
-//       background-position:0% 13%
-//     50%
-//       background-position:100% 88%
-//     100%
-//       background-position:0% 13%
-
-    
-// // .container
-// //   display: flex
-// //   flex-direction: horizontal
-
-// // .column-1
-// //   flex: 1
-
-// // .column-3
-// //   flex: 3
-
-// button
-//   border-radius: .1em
-//   // top: 0
-//   // right: 0
-//   // position: absolute
-
-// div
-//   position: relative
-
-// h2
-//   text-align: center
-//   margin: 0
-
-// .about p 
-//   margin: 0
-  // float: left
-  // padding: 10px
-  // height: 300px
-
-// .left
-//   width: 25%
-
-// .right 
-//   width: 75%
-
-// .row:after 
-//   content: ""
-//   display: table
-//   clear: both
-
   
 
  
