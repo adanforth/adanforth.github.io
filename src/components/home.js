@@ -48,6 +48,7 @@ class Home extends React.Component {
 
     MobileNavbar(){
         let menuClicked = !(this.state.menuToggle) ? "" : "change"
+        let navOpen = !(this.state.menuToggle) ? "mobile-nav-closed" : "mobile-nav-opened"
 
         return(
             <div id="mobile-nav" className = {menuClicked}>
@@ -56,7 +57,7 @@ class Home extends React.Component {
                     <div className="bar2"></div>
                     <div className="bar3"></div>
                 </div>
-                <ul id = "mobile-nav-list">
+                <ul id = "mobile-nav-list" className = {navOpen}>
                     <li><a onClick = {this.scrollTo}>Home</a></li>
                     <li><a onClick = {this.scrollTo}>About Me</a></li>
                     <li><a href="#">Projects</a></li>
