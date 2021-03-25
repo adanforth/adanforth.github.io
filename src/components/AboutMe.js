@@ -45,17 +45,9 @@ class AboutMe extends React.Component{
                                 <h3 className = "m">Contact</h3>
                                 <p>
                                 CONTACT ME.
-                                </p>
-                                <p>
                                 CONTACT ME.
-                                </p>
-                                <p>
                                 CONTACT ME.
-                                </p>
-                                <p>
                                 CONTACT ME.
-                                </p>
-                                <p>
                                 CONTACT ME.
                                 </p>
                             </div>
