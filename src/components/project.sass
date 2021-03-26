@@ -1,0 +1,88 @@
+$transition: ease
+$height: 17em
+$width: 90%
+$text-color: #C4E0E2
+$background: #181D27
+
+.project-showcase
+    border-color: rgba(0,0,0,.125)
+    position: relative
+    margin: 1em auto
+    overflow: hidden
+    width: $width
+    height: $height
+    transition: ease
+    &:hover
+        .icon
+            right: 325px
+            left: -25px
+        .icon-on-hover
+            opacity: 1
+        .desc
+            width: 300px
+            padding-left: 45px
+            padding-right: 45px
+            background: $background
+            color: $text-color
+            &::after
+                border-color: transparent #202426 transparent transparent
+
+.icon
+    position: absolute
+    height: 100%
+    top: 0
+    left: 0
+    right: 300px
+    z-index: 1
+    background: $background
+    background-position: 50% 50%
+    background-size: cover
+    transition: right 250ms $transition, left 250ms $transition
+
+.icon-test
+    background-image: url('/img/background.jpg')
+
+.icon-on-hover
+    position: relative
+    padding-top: $height / 2 - 0.5em
+    height: 100%
+    background: rgba(0,0,0,0.4)
+    text-align: center
+    opacity: 0
+    transition: opacity 250ms $transition
+
+.desc
+    position: absolute
+    width: 300px
+    height: 100%
+    top: 0
+    right: 0
+    // padding: 20px
+    z-index: 2
+    background: #f5f8fa
+    text-align: center
+    transition: background 250ms $transition, color 250ms, width 250ms $transition, padding 250ms $transition
+    &:after
+        display: block
+        width: 0
+        height: 0
+        position: absolute
+        top: 50%
+        left: -20px
+        margin-top: -10px
+        border-style: solid
+        border-width: 10px
+        border-color: transparent #fff transparent transparent
+        content: ""
+        transition: border-color 250ms
+
+.git-link-button
+    padding: 1em 2em
+    border: 0.15em solid #fff
+    color: #fff
+    text-decoration: none
+    font-weight: 700
+    transition: background 250ms
+    &:hover 
+        background: rgba(0,0,0,0.6)
+    

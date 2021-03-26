@@ -10,23 +10,19 @@ $text-color: #C4E0E2
     display: flex
     justify-content: center
     align-items: center
-    background: radial-gradient(circle, transparent, #181D27 200%)
-    mix-blend-mode: difference
 
 .hero::before
     content: ''
     position: absolute
-    // background-image: url(#{$backgroundImagePath}/background.jpg)
+    background-color: black
     background-image: url('/img/background.jpg')
     background-size: cover 
     background-position: center bottom
-    // background-size: 110%
-    // background-repeat: no-repeat
     top: 0px
     right: 0px
     bottom: 0px
     left: 0px
-    opacity: .65
+    opacity: .55
     overflow: hidden
     margin-top: 0px
 
@@ -35,9 +31,8 @@ $text-color: #C4E0E2
     position: absolute
     color: $text-color
     font-size: clamp(2.5rem,10vw,8rem)
-    line-height: 0.9
+    line-height: 0.85
     text-align: center
-    // opacity: .85
     
 .hero p
     position: relative
@@ -45,7 +40,6 @@ $text-color: #C4E0E2
     font-size: clamp(.5rem,5vw,2rem)
     line-height: 0.9
     text-align: center
-    opacity: .85
  
 
 

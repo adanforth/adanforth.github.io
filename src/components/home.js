@@ -3,6 +3,7 @@ import './home.sass'
 
 import AboutMe from './AboutMe'
 import Hero from './hero'
+import Project from './project'
 // import Footer from './footer'
 
 
@@ -105,6 +106,12 @@ class Home extends React.Component {
                 </div>
                 <div>
                     {menuType}
+                </div>
+                <div className = "projects-container">
+                    <Project type = "xdd" name = "xdd" desc = "this is an xd" url = "peepee"/>
+                </div>
+                <div className = "projects-container">
+                    <Project type = "TEER" name = "asdasd" desc = "xxx is an xd" url = "aww"/>
                 </div>
                 <div className = "footer">
                     <div className = "copywrite">
