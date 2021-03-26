@@ -26,12 +26,7 @@ class Home extends React.Component {
 
         this.home = React.createRef();
         this.AboutMe = React.createRef();
-
-        this.links = {
-            "Home": this.home,
-            "About Me": this.AboutMe,
-            "To Top": this.home
-        };
+        this.projects = React.createRef();
     }
 
     Navbar(scrollStatus){
@@ -40,7 +35,7 @@ class Home extends React.Component {
             <ul id = "nav" className = {scrollStatus}>
                 <li><a onClick = {this.scrollTo}>Home</a></li>
                 <li><a onClick = {this.scrollTo}>About Me</a></li>
-                <li><a href="#">Projects</a></li>
+                <li><a onClick = {this.scrollTo}>Projects</a></li>
                 {/* <li><a href="/yeet">Yeet</a></li> */}
             </ul>
         </div>
@@ -61,7 +56,7 @@ class Home extends React.Component {
                 <ul id = "mobile-nav-list" className = {navOpen}>
                     <li><a onClick = {this.scrollTo}>Home</a></li>
                     <li><a onClick = {this.scrollTo}>About Me</a></li>
-                    <li><a href="#">Projects</a></li>
+                    <li><a onClick = {this.scrollTo}>Projects</a></li>
                 </ul>
             </div>
         )
@@ -72,9 +67,12 @@ class Home extends React.Component {
     }
 
     scrollTo(event) {
-        if (this.links[event.target.innerText]){
-            this.links[event.target.innerText].current.scrollIntoView({behavior: 'smooth'});
-        }
+        const yOffset = (this.state.width > 710) ? 87 : 0;
+
+        const id = event.target.innerText
+        const element = document.getElementById(id);
+        const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({top: y, behavior: 'smooth'});
     }
 
     menuClick(){
@@ -98,20 +96,23 @@ class Home extends React.Component {
 
         return (
             <div>
-                <div ref = {this.home}>
+                <div id = "Home">
                     <Hero/>
                 </div>
-                <div ref = {this.AboutMe}>
+                <div id = "About Me">
                     <AboutMe/>
                 </div>
                 <div>
                     {menuType}
                 </div>
-                <div className = "projects-container">
-                    <Project type = "xdd" name = "xdd" desc = "this is an xd" url = "peepee"/>
-                </div>
-                <div className = "projects-container">
-                    <Project type = "TEER" name = "asdasd" desc = "xxx is an xd" url = "aww"/>
+                <div id = "Projects">
+                    HELLO
+                    <div className = "projects-container">
+                        <Project type = "xdd" name = "xdd" desc = "this is an xd" url = "peepee"/>
+                    </div>
+                    <div className = "projects-container">
+                        <Project type = "TEER" name = "asdasd" desc = "xxx is an xd" url = "aww"/>
+                    </div>
                 </div>
                 <div className = "footer">
                     <div className = "copywrite">
