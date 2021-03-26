@@ -43,13 +43,14 @@ class AboutMe extends React.Component{
                             </div>
                             <div className  = "col-contact">
                                 <h3 className = "m">Contact</h3>
-                                <p>
-                                CONTACT ME.
-                                CONTACT ME.
-                                CONTACT ME.
-                                CONTACT ME.
-                                CONTACT ME.
-                                </p>
+                                <a></a>
+                                {/* <p>
+                                github
+                                linked in
+                                email
+                                instagram
+                                
+                                </p> */}
                             </div>
                         </div>
                     </div>
