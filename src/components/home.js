@@ -67,7 +67,7 @@ class Home extends React.Component {
     }
 
     scrollTo(event) {
-        const yOffset = (this.state.width > 710) ? 87 : 0;
+        const yOffset = (this.state.width > 710) ? -87 : 0;
 
         const id = event.target.innerText
         const element = document.getElementById(id);
