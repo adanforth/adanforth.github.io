@@ -1,4 +1,5 @@
 $text-color: #C4E0E2
+$background-color: #181D27
 @import url('https://fonts.googleapis.com/css?family=Open+Sans')
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap')
 $footer-font: 'Noto Sans KR', sans-serif
@@ -39,7 +40,7 @@ body::-webkit-scrollbar-thumb
     cursor: pointer
     
 .scroll
-    background: #181D27
+    background: $background-color
     transition: background .35s linear
 
 #nav li
@@ -103,7 +104,7 @@ body::-webkit-scrollbar-thumb
 
 
 #mobile-nav
-    background: #181D27
+    background: $background-color
     position: absolute
     top: 0
     right: 0
@@ -139,9 +140,12 @@ body::-webkit-scrollbar-thumb
     display: inline-block
     font-size: 1.2em
 
-// .projects-background
-//     background-color: white
-//     padding: 0
+.project-header
+    text-align: center
+    font-size: clamp(3rem,4vw,4rem)
+    padding: .5em
+    color: $text-color
+    background-color: $background-color
 
 .projects-container
     background-color: white
@@ -181,6 +185,7 @@ body::-webkit-scrollbar-thumb
     // margin-left: auto
     // margin-right: auto
 
+    
 // html, body
 //   margin: 0  
 //   padding: 0  

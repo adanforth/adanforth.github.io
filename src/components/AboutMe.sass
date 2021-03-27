@@ -12,7 +12,6 @@ $main-font: 'Noto Sans KR', sans-serif
 .about-header
   background-color: #f5f8fa
   opacity: .9
-  // display: block
   padding-left: 2rem
   padding-right: 2rem
   padding-top: 2rem
@@ -20,7 +19,6 @@ $main-font: 'Noto Sans KR', sans-serif
   border-color: rgba(0,0,0,.125)
   border-style: solid
   border-width: 1px
-  // align-items: center
 
 
 
@@ -41,7 +39,7 @@ $main-font: 'Noto Sans KR', sans-serif
   border-color: rgba(0,0,0,.125)
   // border-bottom: 1px
   border-width: 1px
-  border-style: solid
+  // border-style: solid
 
 .container
   display: inline-block
@@ -90,9 +88,11 @@ div > .about
   text-align: center
 
 h1
-  font-size: 3em
+  font-size: 4.5em
   font-weight: 500
   margin-top: 0
+  font-family: SIMPLICIFA, serif
+  // font-size: 5em
   line-height: 1.3em
   margin-bottom: .5rem
 
@@ -103,6 +103,31 @@ h2
   margin-bottom: 0
   opacity: .56
   line-height: 1.2em
+
+#resume-btn
+  margin: 1em
+  letter-spacing: .1em
+  color: $background
+  background-color: white
+  border-color: $background
+  border-radius: 5px
+  &:hover
+    color: $text-color
+    background-color: $background
+    transition: .2s ease
+    cursor: pointer
+
+h4
+  font-family: SIMPLICIFA, serif
+  font-size: 3em
+  margin: 0
+  padding: 5px
+
+// a
+//   color: red
+
+.socials-links
+  font-size: 2em
 
 img
   max-width: 100%

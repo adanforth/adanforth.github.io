@@ -106,7 +106,9 @@ class Home extends React.Component {
                     {menuType}
                 </div>
                 <div id = "Projects">
-                    HELLO
+                    <h1 className = "project-header">
+                        My Projects so Far
+                    </h1>
                     <div className = "projects-container">
                         <Project type = "xdd" name = "xdd" desc = "this is an xd" url = "peepee"/>
                     </div>

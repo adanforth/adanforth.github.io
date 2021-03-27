@@ -1,6 +1,8 @@
 import React from "react";
 import './AboutMe.sass'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCodeBranch } from '@fortawesome/free-solid-svg-icons'
+import { faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 
 
 class AboutMe extends React.Component{
@@ -20,7 +22,7 @@ class AboutMe extends React.Component{
             <div className = "about">
                 <header className = "about-header">
                     <img src = "../images/icon.png" className = "about-header-icon"/>
-                    <h1>Hi! I'm Andy</h1>
+                    <h1 className = "about-title">Hi, I'm Andy!</h1>
                     <h2>
                         Undergraduate at University of Washington 
                         <br/>
@@ -43,7 +45,9 @@ class AboutMe extends React.Component{
                             </div>
                             <div className  = "col-contact">
                                 <h3 className = "m">Contact</h3>
-                                <a></a>
+                                <a>
+                                    <FontAwesomeIcon className = "socials-links" icon={faGithubSquare}/>
+                                </a>
                                 {/* <p>
                                 github
                                 linked in
@@ -54,26 +58,16 @@ class AboutMe extends React.Component{
                             </div>
                         </div>
                     </div>
+                <div>
+                    <button id = "resume-btn" onClick = {this.openResume}>
+                            <h4>
+                                View My Resume
+                            </h4>
+                        </button>
+                </div>
                 </main>
             </div>
-            // <div className = "about css-selector">
-            //     <div>
-            //         <h2>About Me</h2>
-            //         <button onClick = {this.openResume}>View My Resume</button>
-            //     </div>
-            //     <div className = "grid-container">
-            //         {/* <div className="grid-item picture">  */}
-            //             {/* hello/ */}
-            //             <img src = "../images/unknown.png" className = "grid-item picture"/>
-            //         {/* </div> */}
-            //         <div className="grid-item contact">
-            //             <h2>contact</h2>
-            //         </div>
-            //         <div className="grid-item about-desc">
-            //             <h2>About me</h2>
-            //         </div>
-            //     </div>
-            // </div>
+      
         );
     }
 }
