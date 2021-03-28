@@ -67,9 +67,11 @@ class Home extends React.Component {
     }
 
     scrollTo(event) {
-        const yOffset = (this.state.width > 710) ? -87 : 0;
-
-        const id = event.target.innerText
+        const yOffset = (this.state.width > 710) ? -87 : 0; 
+        let id = event.target.innerText
+        if (event.target.innerText == "To Top"){
+            id = "Home"
+        }  
         const element = document.getElementById(id);
         const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
         window.scrollTo({top: y, behavior: 'smooth'});
