@@ -16,7 +16,7 @@ class Project extends React.Component{
             <div className = "project-showcase">
                 <div className = "icon icon-test">
                     <div className = "icon-on-hover">
-                        <a target="_blank" rel="noopener noreferrer" className = "git-link-button" href = "https://ifunny.co/">LINK</a>
+                        <a target="_blank" rel="noopener noreferrer" className = "git-link-button" href = "https://google.com/">LINK</a>
                     </div>
                 </div>
                 <div className = "desc">

@@ -1,8 +1,8 @@
 import React from "react";
 import './AboutMe.sass'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCodeBranch } from '@fortawesome/free-solid-svg-icons'
-import { faGithubSquare } from '@fortawesome/free-brands-svg-icons'
+import { faCodeBranch, faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons'
+import { faGithubSquare, faLinkedin, faInstagramSquare } from '@fortawesome/free-brands-svg-icons'
 
 
 class AboutMe extends React.Component{
@@ -35,26 +35,52 @@ class AboutMe extends React.Component{
                             <div className  = "col-aboutme">
                                 <h3 className = "m">About Me</h3>
                                 <p>
-                                    A bunch of words. A bunch2323 of words. A bunch of words. 
-                                    A bunch of wor212ds. A bunch of words. A bunch of words. 
-                                    A bunch of words. Aasd bunch of words. A asdbunch of words. 
-                                    A bunch of wosrds. A bunch of words. A bunch of words. 
-                                    A bunch of words. Asz bunch of words. A bunch of words. 
-                                    A bunch of wosrds. A bunch of wordaaaass. A bunch of words. 
+                                    I'm still making this about me page. In the meantime, enjoy some 
+                                    spam. BUNCH OF WORDSBUNCH OF WORDSBUNCH OF WORDSBUNCH OF WORDSBUNCH OF WORDS
+                                    BUNCH OF WORDSBUNCH OF WORDSBUNCH OF WORDSBUNCH OF WORDSBUNCH OF WORDS
+                                    BUNCH OF WORDSBUNCH OF WORDSBUNCH OF WORDSBUNCH OF WORDSBUNCH OF WORDS
+                                    BUNCH OF WORDSBUNCH OF WORDSBUNCH OF WORDSBUNCH OF WORDSBUNCH OF WORDS
+                                    BUNCH OF WORDSBUNCH OF WORDSBUNCH OF WORDSBUNCH OF WORDS
+                                    BUNCH OF WORDSBUNCH OF WORDS
+                                    BUNCH OF WORDSBUNCH OF WORDSBUNCH OF WORDSBUNCH OF WORDS
+                                    BUNCH OF WORDSBUNCH OF WORDSBUNCH OF WORDSBUNCH OF WORDSBUNCH OF WORDS
+                                    BUNCH OF WORDSBUNCH OF WORDSBUNCH OF WORDSBUNCH OF WORDSBUNCH OF WORDS 
                                 </p>
                             </div>
                             <div className  = "col-contact">
                                 <h3 className = "m">Contact</h3>
-                                <a>
-                                    <FontAwesomeIcon className = "socials-links" icon={faGithubSquare}/>
-                                </a>
-                                {/* <p>
-                                github
-                                linked in
-                                email
-                                instagram
-                                
-                                </p> */}
+                                <div className = "socials-links">
+                                    <a target="_blank" rel="noopener noreferrer" href = "https://github.com/adanforth">
+                                        <FontAwesomeIcon icon={faGithubSquare}/>
+                                        <span>
+                                            Github
+                                        </span>
+                                    </a>
+                                </div>
+                                <div className = "socials-links">
+                                    <a target="_blank" rel="noopener noreferrer" href = "https://www.linkedin.com/in/andy-danforth-56b0421b9/">
+                                        <FontAwesomeIcon icon={faLinkedin}/>
+                                        <span>
+                                            LinkedIn
+                                        </span>
+                                    </a>
+                                </div>
+                                <div className = "socials-links">
+                                    <a target="_blank" rel="noopener noreferrer" href = "mailto:deandanfo@gmail.com">
+                                        <FontAwesomeIcon icon={faEnvelopeSquare}/>
+                                        <span>
+                                            Email
+                                        </span>
+                                    </a>
+                                </div>
+                                <div className = "socials-links">
+                                    <a target="_blank" rel="noopener noreferrer" href = "https://www.instagram.com/deandeandaendean/">
+                                        <FontAwesomeIcon icon={faInstagramSquare}/>
+                                        <span>
+                                            Instagram
+                                        </span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>

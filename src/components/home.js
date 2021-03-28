@@ -115,6 +115,9 @@ class Home extends React.Component {
                     <div className = "projects-container">
                         <Project type = "TEER" name = "asdasd" desc = "xxx is an xd" url = "aww"/>
                     </div>
+                    <div className = "projects-container">
+                        <Project type = "HELLOOO" name = "ssww2222" desc = "This is another test" url = "aww"/>
+                    </div>
                 </div>
                 <div className = "footer">
                     <div className = "copywrite">

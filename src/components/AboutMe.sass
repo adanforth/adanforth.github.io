@@ -43,7 +43,7 @@ $main-font: 'Noto Sans KR', sans-serif
 
 .container
   display: inline-block
-  max-width: 42em
+  max-width: 44em
   padding: 2rem
   margin-left: auto
   margin-right: auto
@@ -58,7 +58,7 @@ $main-font: 'Noto Sans KR', sans-serif
 .col-aboutme
   display: block
   float: left
-  width: 75%
+  width: 73%
   box-sizing: border-box
   padding-left: 1em
   padding-right: 1em
@@ -67,7 +67,7 @@ $main-font: 'Noto Sans KR', sans-serif
 .col-contact
   display: block
   box-sizing: border-box
-  width: 25%
+  width: 27%
   padding-left: 1em
   padding-right: 1em
   float: left
@@ -76,7 +76,6 @@ $main-font: 'Noto Sans KR', sans-serif
   .col-contact, .col-aboutme
     width: 100%
 
-  
 
 .m
   margin-top: 0
@@ -111,6 +110,7 @@ h2
   background-color: white
   border-color: $background
   border-radius: 5px
+  margin-bottom: 1.825em
   &:hover
     color: $text-color
     background-color: $background
@@ -123,11 +123,27 @@ h4
   margin: 0
   padding: 5px
 
-// a
-//   color: red
+span
+  font-family: $main-font
+  font-size: .65em
+  padding-left: .25em
+  padding-right: .75em
+  
+
 
 .socials-links
-  font-size: 2em
+  font-size: 1.75em
+  display: inline-block
+  text-decoration: none
+
+a
+  text-decoration: none
+  color: $background
+  transition:  color .1s ease-in-out
+  &:hover
+    color: #2098d1
+    transition:  color .1s ease-in-out
+
 
 img
   max-width: 100%
