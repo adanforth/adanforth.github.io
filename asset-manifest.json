@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.b284208e.chunk.css",
-    "main.js": "/static/js/main.6b417a0e.chunk.js",
-    "main.js.map": "/static/js/main.6b417a0e.chunk.js.map",
+    "main.css": "/static/css/main.af0f34c7.chunk.css",
+    "main.js": "/static/js/main.3ea32f41.chunk.js",
+    "main.js.map": "/static/js/main.3ea32f41.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.06b5035f.js",
     "runtime-main.js.map": "/static/js/runtime-main.06b5035f.js.map",
     "static/js/2.3d2cd3d9.chunk.js": "/static/js/2.3d2cd3d9.chunk.js",
     "static/js/2.3d2cd3d9.chunk.js.map": "/static/js/2.3d2cd3d9.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.b284208e.chunk.css.map": "/static/css/main.b284208e.chunk.css.map",
+    "static/css/main.af0f34c7.chunk.css.map": "/static/css/main.af0f34c7.chunk.css.map",
     "static/js/2.3d2cd3d9.chunk.js.LICENSE.txt": "/static/js/2.3d2cd3d9.chunk.js.LICENSE.txt",
     "static/media/home.sass": "/static/media/SIMPLIFICA.41b3c7c2.ttf",
     "static/media/project.sass": "/static/media/background.199eac09.jpg"
@@ -16,7 +16,7 @@
   "entrypoints": [
     "static/js/runtime-main.06b5035f.js",
     "static/js/2.3d2cd3d9.chunk.js",
-    "static/css/main.b284208e.chunk.css",
-    "static/js/main.6b417a0e.chunk.js"
+    "static/css/main.af0f34c7.chunk.css",
+    "static/js/main.3ea32f41.chunk.js"
   ]
 }
