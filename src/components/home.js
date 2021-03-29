@@ -95,6 +95,7 @@ class Home extends React.Component {
     render (){
         let scrollStatus = (this.state.scroll > 0) ? "scroll" : "";
         let menuType = (this.state.width > 710) ? this.Navbar(scrollStatus) : this.MobileNavbar()
+        let isMobile = (this.state.width > 710) ? false : true
 
         return (
             <div>
@@ -112,13 +113,19 @@ class Home extends React.Component {
                         My Projects so Far
                     </h1>
                     <div className = "projects-container">
-                        <Project type = "xdd" name = "xdd" desc = "this is an xd" url = "peepee"/>
+                        <Project type = "PERSONAL PROJECT" name = "Melodiq" desc = "A React based musical guessing game" url = "peepee" isMobile = {isMobile}/>
                     </div>
                     <div className = "projects-container">
-                        <Project type = "TEER" name = "asdasd" desc = "xxx is an xd" url = "aww"/>
+                        <Project type = "PERSONAL PROJECT" name = "Sunsets Locale" desc = "A discord music bot" url = "aww" isMobile = {isMobile}/>
                     </div>
                     <div className = "projects-container">
-                        <Project type = "HELLOOO" name = "ssww2222" desc = "This is another test" url = "aww"/>
+                        <Project type = "CLASS PROJECT" name = "2d Raycaster" desc = "A raycaster implemented in C using FreeGLUT" url = "aww" isMobile = {isMobile}/>
+                    </div>
+                    <div className = "projects-container">
+                        <Project type = "CLASS PROJECT" name = "Snake Implementation" desc = "The game of snake remade in C/shell using nCurses" url = "aww" isMobile = {isMobile}/>
+                    </div>
+                    <div className = "projects-container">
+                        <Project type = "INTERNSHIP WORK" name = "Gcode Compiler" desc = "A program to output working gcode from an stl slice" url = "aww" isMobile = {isMobile}/>
                     </div>
                 </div>
                 <div className = "footer">

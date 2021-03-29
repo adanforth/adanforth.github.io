@@ -3,6 +3,26 @@ $height: 17em
 $width: 90%
 $text-color: #C4E0E2
 $background: #181D27
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap')
+$main-font: 'Noto Sans KR', sans-serif
+
+.mobile-project-showcase
+    position: relative
+    margin: 1em auto
+    overflow: hidden
+    width: $width
+    height: $height
+    transition: ease
+    text-align: center
+    background-color: $background
+    // display: block
+
+.mobile-desc
+    color: $text-color
+
+.mobile-icon-on-hover
+    margin: 2.3em
+
 
 .project-showcase
     border-color: rgba(0,0,0,.125)
@@ -40,7 +60,7 @@ $background: #181D27
     transition: right 250ms $transition, left 250ms $transition
 
 .icon-test
-    background-image: url('/img/background.jpg')
+    background-image: url('/img/unknown.png')
 
 .icon-on-hover
     position: relative
@@ -57,7 +77,6 @@ $background: #181D27
     height: 100%
     top: 0
     right: 0
-    // padding: 20px
     z-index: 2
     background: #f5f8fa
     text-align: center
@@ -76,8 +95,22 @@ $background: #181D27
         content: ""
         transition: border-color 250ms
 
+.desc-type
+    font-size: 1.3em
+    margin: .56em
+    font-family: $main-font
+.desc-name
+    font-size: 2.5em
+    margin: .3em
+    opacity: 1
+.desc-desc
+    font-family: $main-font
+    margin: .5em
+    font-size: 1.3em
+
+
 .git-link-button
-    padding: 1em 2em
+    padding: 1em 2.2em
     border: 0.15em solid #fff
     color: #fff
     text-decoration: none
@@ -85,4 +118,6 @@ $background: #181D27
     transition: background 250ms
     &:hover 
         background: rgba(0,0,0,0.6)
+        color: $text-color
+        transition: background 250ms
     

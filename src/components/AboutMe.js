@@ -35,16 +35,14 @@ class AboutMe extends React.Component{
                             <div className  = "col-aboutme">
                                 <h3 className = "m">About Me</h3>
                                 <p>
-                                    I'm still making this about me page. In the meantime, enjoy some 
-                                    spam. BUNCH OF WORDSBUNCH OF WORDSBUNCH OF WORDSBUNCH OF WORDSBUNCH OF WORDS
-                                    BUNCH OF WORDSBUNCH OF WORDSBUNCH OF WORDSBUNCH OF WORDSBUNCH OF WORDS
-                                    BUNCH OF WORDSBUNCH OF WORDSBUNCH OF WORDSBUNCH OF WORDSBUNCH OF WORDS
-                                    BUNCH OF WORDSBUNCH OF WORDSBUNCH OF WORDSBUNCH OF WORDSBUNCH OF WORDS
-                                    BUNCH OF WORDSBUNCH OF WORDSBUNCH OF WORDSBUNCH OF WORDS
-                                    BUNCH OF WORDSBUNCH OF WORDS
-                                    BUNCH OF WORDSBUNCH OF WORDSBUNCH OF WORDSBUNCH OF WORDS
-                                    BUNCH OF WORDSBUNCH OF WORDSBUNCH OF WORDSBUNCH OF WORDSBUNCH OF WORDS
-                                    BUNCH OF WORDSBUNCH OF WORDSBUNCH OF WORDSBUNCH OF WORDSBUNCH OF WORDS 
+                                    I am currently a second year undergraduate at the University of Washington Seattle!
+                                    I am currently pursuing a double major in Computer Science and Applied and Computational Mathematical
+                                    Sciences: Discrete Math and Algorithm. I love working with and learning about different coding langauges and 
+                                    software!
+                                    <br/>
+                                    <br/>
+                                    blah blah blah I don't want to fill this out yet. The fonts suck too
+                                    
                                 </p>
                             </div>
                             <div className  = "col-contact">
