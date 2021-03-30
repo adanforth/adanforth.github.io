@@ -113,19 +113,19 @@ class Home extends React.Component {
                         My Projects so Far
                     </h1>
                     <div className = "projects-container">
-                        <Project type = "PERSONAL PROJECT" name = "Melodiq" desc = "A React based musical guessing game" url = "peepee" isMobile = {isMobile}/>
+                        <Project icon = "icon-test" type = "PERSONAL PROJECT" name = "Melodiq" desc = "A React based musical guessing game" url = "peepee" isMobile = {isMobile}/>
                     </div>
                     <div className = "projects-container">
-                        <Project type = "PERSONAL PROJECT" name = "Sunsets Locale" desc = "A discord music bot" url = "aww" isMobile = {isMobile}/>
+                        <Project icon = "icon-test" type = "PERSONAL PROJECT" name = "Sunsets Locale" desc = "A discord music bot" url = "aww" isMobile = {isMobile}/>
                     </div>
                     <div className = "projects-container">
-                        <Project type = "CLASS PROJECT" name = "2d Raycaster" desc = "A raycaster implemented in C using FreeGLUT" url = "aww" isMobile = {isMobile}/>
+                        <Project icon = "icon-raycast" type = "CLASS PROJECT" name = "2d Raycaster" desc = "A raycaster implemented in C using FreeGLUT" url = "aww" isMobile = {isMobile}/>
                     </div>
                     <div className = "projects-container">
-                        <Project type = "CLASS PROJECT" name = "Snake Implementation" desc = "The game of snake remade in C/shell using nCurses" url = "aww" isMobile = {isMobile}/>
+                        <Project icon = "icon-snake" type = "CLASS PROJECT" name = "Snake Implementation" desc = "The game of snake remade in C/shell using nCurses" url = "aww" isMobile = {isMobile}/>
                     </div>
                     <div className = "projects-container">
-                        <Project type = "INTERNSHIP WORK" name = "Gcode Compiler" desc = "A program to output working gcode from an stl slice" url = "aww" isMobile = {isMobile}/>
+                        <Project icon = "icon-test" type = "INTERNSHIP WORK" name = "Gcode Compiler" desc = "A program to output working gcode from an stl slice" url = "aww" isMobile = {isMobile}/>
                     </div>
                 </div>
                 <div className = "footer">

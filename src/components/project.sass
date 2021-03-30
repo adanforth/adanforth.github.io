@@ -60,7 +60,16 @@ $main-font: 'Noto Sans KR', sans-serif
     transition: right 250ms $transition, left 250ms $transition
 
 .icon-test
+    @extend .icon
     background-image: url('/img/unknown.png')
+
+.icon-raycast
+    @extend .icon
+    background-image: url('/img/raycast.png')
+
+.icon-snake
+    @extend .icon
+    background-image: url('/img/snake.png')
 
 .icon-on-hover
     position: relative
