@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.746a9276.chunk.css",
-    "main.js": "/static/js/main.06a4d882.chunk.js",
-    "main.js.map": "/static/js/main.06a4d882.chunk.js.map",
+    "main.css": "/static/css/main.7a5b4a32.chunk.css",
+    "main.js": "/static/js/main.28de4985.chunk.js",
+    "main.js.map": "/static/js/main.28de4985.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.06b5035f.js",
     "runtime-main.js.map": "/static/js/runtime-main.06b5035f.js.map",
     "static/js/2.3d2cd3d9.chunk.js": "/static/js/2.3d2cd3d9.chunk.js",
     "static/js/2.3d2cd3d9.chunk.js.map": "/static/js/2.3d2cd3d9.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.746a9276.chunk.css.map": "/static/css/main.746a9276.chunk.css.map",
+    "static/css/main.7a5b4a32.chunk.css.map": "/static/css/main.7a5b4a32.chunk.css.map",
     "static/js/2.3d2cd3d9.chunk.js.LICENSE.txt": "/static/js/2.3d2cd3d9.chunk.js.LICENSE.txt",
     "static/media/home.sass": "/static/media/SIMPLIFICA.41b3c7c2.ttf",
     "static/media/hero.sass": "/static/media/background.199eac09.jpg",
@@ -17,7 +17,7 @@
   "entrypoints": [
     "static/js/runtime-main.06b5035f.js",
     "static/js/2.3d2cd3d9.chunk.js",
-    "static/css/main.746a9276.chunk.css",
-    "static/js/main.06a4d882.chunk.js"
+    "static/css/main.7a5b4a32.chunk.css",
+    "static/js/main.28de4985.chunk.js"
   ]
 }
